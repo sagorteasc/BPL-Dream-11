@@ -1,7 +1,7 @@
 import { TbCoinFilled } from "react-icons/tb";
 const Header = ({ coins }) => {
     return (
-        <nav className="pt-10 pb-6">
+        <nav className="py-5">
             <div className="flex gap-3 justify-between items-center">
                 <img className="w-24 h-24" src="/src/assets/logo.png" alt="" />
                 <div className="flex items-center gap-2 md:gap-7 lg:gap-10">

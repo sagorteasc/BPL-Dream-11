@@ -1,5 +1,7 @@
 import banner from '../../assets/banner-main.png';
 import bgImage from '../../assets/bg-shadow.png';
+import PropTypes from 'prop-types';
+
 const Banner = ({ handleCoinIncrement }) => {
     return (
         <div style={{ backgroundImage: `url(${bgImage})` }} className="bg-[#131313] h-full text-white rounded-3xl py-16 px flex flex-col justify-center items-center gap-4 mb-14">
@@ -14,5 +16,9 @@ const Banner = ({ handleCoinIncrement }) => {
         </div>
     );
 };
+
+Banner.propTypes = {
+    handleCoinIncrement: PropTypes.func.isRequired
+}
 
 export default Banner;

@@ -1,0 +1,202 @@
+[
+  {
+    "playerId": 1,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/GqjLVjj/why-is-shakib-al-hasan-the-greatest-all-rounder-and-it-isnt-v0-cellz2d2e31f1.webp",
+    "role": "All-rounder",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Slow left-arm orthodox",
+    "biddingPrice": 950000
+  },
+  {
+    "playerId": 2,
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://i.ibb.co.com/KcWnR1k4/photo.webp",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm medium",
+    "biddingPrice": 1500000
+  },
+  {
+    "playerId": 3,
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "image": "https://i.ibb.co.com/C5vWc2Zt/new-york-new-york-babar-azam-of-pakistan-looks-on-ahead-of-the-icc-mens-t20-cricket-world-cup.webp",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm off break",
+    "biddingPrice": 1300000
+  },
+  {
+    "playerId": 4,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co.com/JR9BgSRW/mumbai-india-kane-williamson-of-new-zealand-reacts-following-defeat-in-the-icc-mens-cricket.webp",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm off break",
+    "biddingPrice": 1200000
+  },
+  {
+    "playerId": 5,
+    "name": "Steve Smith",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/Zpjpsynq/steve-smith-ashes-2019-kd5muazejg83ks3j.webp",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm leg break",
+    "biddingPrice": 1250000
+  },
+  {
+    "playerId": 6,
+    "name": "Jos Buttler",
+    "country": "England",
+    "image": "https://i.ibb.co.com/nNRxF0G6/cc9a9e7883e04120e7602d04c825cf32-Y29ud-GVud-HNl-YXJja-GFwa-Swx-Nzcw-MDk1-ODk0-2-80537282.webp",
+    "role": "Wicketkeeper-Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": 1100000
+  },
+  {
+    "playerId": 7,
+    "name": "Quinton de Kock",
+    "country": "South Africa",
+    "image": "https://i.ibb.co.com/PsjPh8Sn/130992321-gettyimages-1249518340.webp",
+    "role": "Wicketkeeper-Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": 1000000
+  },
+  {
+    "playerId": 8,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "image": "https://i.ibb.co.com/GvyW9PG6/123927259.webp",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm leg break",
+    "biddingPrice": 1200000
+  },
+  {
+    "playerId": 9,
+    "name": "Ben Stokes",
+    "country": "England",
+    "image": "https://i.ibb.co.com/NgdLjhhs/ben-stokes-exposed-tattoos-9kea6o75z2ejky18.webp",
+    "role": "All-rounder",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm fast-medium",
+    "biddingPrice": 1400000
+  },
+  {
+    "playerId": 10,
+    "name": "Mitchell Starc",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/Kc2RkWzN/4006121.webp",
+    "role": "Bowler",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm fast",
+    "biddingPrice": 1150000
+  },
+  {
+    "playerId": 11,
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/YBC7xhML/Mustafizur-Rahman-1-1.webp",
+    "role": "Bowler",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm fast-medium",
+    "biddingPrice": 920000
+  },
+  {
+    "playerId": 12,
+    "name": "Rohit Sharma",
+    "country": "India",
+    "image": "https://i.ibb.co.com/CK6fZnRs/rohit-sharma-cricket-hand-signals-gde7t1b55k2mg4tp.webp",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm off break",
+    "biddingPrice": 1350000
+  },
+  {
+    "playerId": 13,
+    "name": "Shaheen Afridi",
+    "country": "Pakistan",
+    "image": "https://i.ibb.co.com/prPs6sv9/2677855-untitled-design-1.webp",
+    "role": "Bowler",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm fast",
+    "biddingPrice": 1000000
+  },
+  {
+    "playerId": 14,
+    "name": "Glenn Maxwell",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/4wcp7xBP/glenn-maxwell-professional-cricketer-qoce6a0vkonehtg2.webp",
+    "role": "All-rounder",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm off break",
+    "biddingPrice": 1100000
+  },
+  {
+    "playerId": 15,
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co.com/RGVtH0n7/new-zealands-trent-boult-prepares-to-bowl-during-the-2023-icc-mens-cricket-world-cup-one-day.webp",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Left-arm fast-medium",
+    "biddingPrice": 1050000
+  },
+  {
+    "playerId": 16,
+    "name": "David Warner",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/qYZNpH63/david-warner-yellow-uniform-36zu8cs7yw1my2ae.webp",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm leg break",
+    "biddingPrice": 1080000
+  },
+  {
+    "playerId": 17,
+    "name": "Joe Root",
+    "country": "England",
+    "image": "https://i.ibb.co.com/Fq0GyG3N/brisbane-australia-joe-root-poses-during-an-england-ashes-squad-portrait-session-at-the-gabba.webp",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm off break",
+    "biddingPrice": 1150000
+  },
+  {
+    "playerId": 18,
+    "name": "Kagiso Rabada",
+    "country": "South Africa",
+    "image": "https://i.ibb.co.com/0796Bbp/skysports-kagiso-rabada-south-africa-5865966-1024x576.webp",
+    "role": "Bowler",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm fast",
+    "biddingPrice": 1120000
+  },
+  {
+    "playerId": 19,
+    "name": "Litton Das",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/7JjzdwLp/Litton-Das.webp",
+    "role": "Wicketkeeper-Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": 870000
+  },
+  {
+    "playerId": 20,
+    "name": "Hardik Pandya",
+    "country": "India",
+    "image": "https://i.ibb.co.com/bMqWw6KH/new-york-new-york-hardik-pandya-of-india-looks-on-during-the-icc-mens-t20-cricket-world-cup.webp",
+    "role": "All-rounder",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm fast-medium",
+    "biddingPrice": 1250000
+  }
+]
