@@ -34,7 +34,8 @@ const Cricketer = ({ cricketer }) => {
 };
 
 Cricketer.propTypes = {
-    cricketer: PropTypes.object.isRequired
+    cricketer: PropTypes.object.isRequired,
+    handleChoosePlayer: PropTypes.func.isRequired
 }
 
 export default Cricketer;

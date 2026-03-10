@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Cricketer from "../Cricketer/Cricketer";
+import PropTypes from "prop-types";
 
 const Cricketers = () => {
     const [cricketers, setCricketers] = useState([]);
@@ -16,10 +17,15 @@ const Cricketers = () => {
                 cricketers.map(cricketer => <Cricketer
                     key={cricketer.playerId}
                     cricketer={cricketer}
+
                 ></Cricketer>)
             }
         </div>
     );
 };
+
+Cricketers.propTypes = {
+
+}
 
 export default Cricketers;
