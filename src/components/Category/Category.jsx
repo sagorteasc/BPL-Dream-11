@@ -7,7 +7,7 @@ const Category = ({ isActive, handleIsActiveButton, selectedPlayers }) => {
                 <h3 className="font-bold text-xl md:text-[28px]">
 
                     {
-                        isActive.status === 'available' ? "Available Players" : `Selected Players (${selectedPlayers.length})`
+                        isActive.status === 'available' ? "Available Players" : `Selected Players (${selectedPlayers.length} / 6)`
                     }
 
 

@@ -5,7 +5,7 @@ const Cricketer = ({ cricketer, handleChoosePlayer }) => {
     const { image, name, country, role, battingType, bowlingType, biddingPrice } = cricketer;
 
     return (
-        <div className="border border-[#13131310] drop-shadow-md p-6 space-y-2 rounded-2xl">
+        <div className="border border-[#13131310] drop-shadow-md p-4 space-y-2 rounded-2xl">
             <img className="w-full h-60 rounded-3xl" src={image} alt="" />
             <div className="space-y-2">
                 <div className="flex items-center gap-1 font-semibold text-xl">

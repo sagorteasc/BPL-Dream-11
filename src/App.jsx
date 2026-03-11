@@ -46,10 +46,16 @@ function App() {
     }
     else {
       const newSelectedPlayers = [...selectedPlayers, player];
-      setSelectedPlayers(newSelectedPlayers);
-      // console.log(newSelectedPlayers);
-    }
 
+      // max player validation
+      if (newSelectedPlayers.length > 6) {
+        alert("can't add more player")
+      }
+      else {
+        setSelectedPlayers(newSelectedPlayers);
+        // console.log(newSelectedPlayers);
+      }
+    }
   }
 
   return (
