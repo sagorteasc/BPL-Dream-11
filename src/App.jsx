@@ -77,6 +77,13 @@ function App() {
     }
   }
 
+  // delete choose player
+  const handleDeletePlayer = (player) => {
+    const remainingPlayer = selectedPlayers.filter(remaining => remaining.playerId !== player);
+    // console.log(remainingPlayer);
+    setSelectedPlayers(remainingPlayer);
+  }
+
   return (
     <>
       <div className='max-w-[1320px] mx-auto w-11/12 lg:w-full'>
@@ -101,6 +108,7 @@ function App() {
 
             : (<SelectedPlayers
               selectedPlayers={selectedPlayers}
+              handleDeletePlayer={handleDeletePlayer}
             ></SelectedPlayers>)
         }
 

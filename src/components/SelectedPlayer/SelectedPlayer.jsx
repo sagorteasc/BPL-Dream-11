@@ -1,16 +1,22 @@
-const SelectedPlayer = ({ selectedPlayer }) => {
-    const { image, name, role } = selectedPlayer
+import { MdDeleteForever } from "react-icons/md";
+
+const SelectedPlayer = ({ selectedPlayer, handleDeletePlayer }) => {
+    const { image, name, role, playerId } = selectedPlayer
 
     return (
         <div>
-            <div className="bg-[#13131310] rounded-2xl drop-shadow-md p-3 flex items-center gap-2 mb-4">
-                <img className="w-20 h-20 rounded-full object-cover" src={image} alt="" />
+            <div className="bg-[#13131310] rounded-2xl drop-shadow-md p-3 flex justify-between items-center mb-4">
+                <div className="flex items-center gap-2">
+                    <img className="w-20 h-20 rounded-full object-cover" src={image} alt="" />
+                    <div>
+                        <h3 className="font-semibold text-xl mb-1 md:text-2xl">{name}</h3>
+                        <p className="text-[#13131360]">{role}</p>
+                    </div>
+                </div>
                 <div>
-                    <h3 className="font-semibold text-2xl mb-1">{name}</h3>
-                    <p className="text-[#13131360]">{role}</p>
+                    <button onClick={() => handleDeletePlayer(playerId)}><MdDeleteForever className="w-10 h-10" /></button>
                 </div>
             </div>
-
         </div>
     );
 };
