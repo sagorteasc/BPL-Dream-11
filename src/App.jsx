@@ -12,13 +12,13 @@ function App() {
   const [isActive, setIsActive] = useState({
     status: 'available'
   })
-  console.log(isActive)
 
   const [selectedPlayers, setSelectedPlayers] = useState([]);
 
   // coins increment
   const handleCoinIncrement = () => {
-    const newCoins = coins + 150000;
+    alert('coin added');
+    const newCoins = coins + 1500000;
     setCoins(newCoins);
   }
 
@@ -41,19 +41,38 @@ function App() {
   const handleChoosePlayer = (player) => {
     const isExist = selectedPlayers.find(p => p.playerId === player.playerId);
 
+    // existing player validation
     if (isExist) {
-      return
+      alert(player.name + ' already exist');
+      return;
     }
+
     else {
       const newSelectedPlayers = [...selectedPlayers, player];
 
       // max player validation
       if (newSelectedPlayers.length > 6) {
-        alert("can't add more player")
+        alert("can't add more player");
+        return;
       }
+
       else {
-        setSelectedPlayers(newSelectedPlayers);
-        // console.log(newSelectedPlayers);
+        // enough coins validation
+        if (coins < player.biddingPrice) {
+          alert('not enough money');
+          return;
+        }
+
+        else {
+          // add player
+          alert(player.name + ' added');
+          setSelectedPlayers(newSelectedPlayers);
+          // console.log(newSelectedPlayers);
+
+          // coins decrement
+          const decrementCoins = coins - player.biddingPrice;
+          setCoins(decrementCoins);
+        }
       }
     }
   }
