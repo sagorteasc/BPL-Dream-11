@@ -5,6 +5,7 @@ import Header from './components/Header/Header'
 import Category from './components/Category/Category';
 import Cricketers from './components/Cricketers/Cricketers';
 import SelectedPlayers from './components/SelectedPlayers/SelectedPlayers';
+import { toast, ToastContainer } from 'react-toastify';
 
 function App() {
   const [coins, setCoins] = useState(0);
@@ -17,7 +18,9 @@ function App() {
 
   // coins increment
   const handleCoinIncrement = () => {
-    alert('coin added');
+    toast.success('Credit Added to your Account', {
+      position: "top-center"
+    });
     const newCoins = coins + 1500000;
     setCoins(newCoins);
   }
@@ -43,7 +46,9 @@ function App() {
 
     // existing player validation
     if (isExist) {
-      alert(player.name + ' already exist');
+      toast.error('Player already selected', {
+        position: "top-center"
+      });
       return;
     }
 
@@ -52,20 +57,26 @@ function App() {
 
       // max player validation
       if (newSelectedPlayers.length > 6) {
-        alert("can't add more player");
+        toast.error("Unable to add Additional Players", {
+          position: "top-center"
+        });
         return;
       }
 
       else {
         // enough coins validation
         if (coins < player.biddingPrice) {
-          alert('not enough money');
+          toast.error('Not Enough Credit', {
+            position: "top-center"
+          });
           return;
         }
 
         else {
           // add player
-          alert(player.name + ' added');
+          toast.success(player.name + ' added', {
+            position: "top-center"
+          });
           setSelectedPlayers(newSelectedPlayers);
           // console.log(newSelectedPlayers);
 
@@ -82,11 +93,20 @@ function App() {
     const remainingPlayer = selectedPlayers.filter(remaining => remaining.playerId !== player);
     // console.log(remainingPlayer);
     setSelectedPlayers(remainingPlayer);
+    toast.warning('Player removed');
+  }
+
+  const handleAddMorePlayer = () => {
+    setIsActive({
+      status: 'available'
+    })
   }
 
   return (
     <>
-      <div className='max-w-[1320px] mx-auto w-11/12 lg:w-full'>
+      <ToastContainer />
+
+      <div className='max-w-[1320px] mx-auto w-11/12 mb-36 lg:w-full'>
         <Header coins={coins}></Header>
 
         <Banner
@@ -109,6 +129,7 @@ function App() {
             : (<SelectedPlayers
               selectedPlayers={selectedPlayers}
               handleDeletePlayer={handleDeletePlayer}
+              handleAddMorePlayer={handleAddMorePlayer}
             ></SelectedPlayers>)
         }
 
