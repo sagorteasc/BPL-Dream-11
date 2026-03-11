@@ -7,6 +7,7 @@ import Cricketers from './components/Cricketers/Cricketers';
 import SelectedPlayers from './components/SelectedPlayers/SelectedPlayers';
 import { toast, ToastContainer } from 'react-toastify';
 import Newsletter from './components/Newsletter/Newsletter';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [coins, setCoins] = useState(0);
@@ -136,6 +137,10 @@ function App() {
         }
 
         <Newsletter></Newsletter>
+      </div>
+
+      <div className='bg-[#06091A]'>
+        <Footer></Footer>
       </div>
     </>
   )
