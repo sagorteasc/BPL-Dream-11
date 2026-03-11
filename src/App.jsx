@@ -6,6 +6,7 @@ import Category from './components/Category/Category';
 import Cricketers from './components/Cricketers/Cricketers';
 import SelectedPlayers from './components/SelectedPlayers/SelectedPlayers';
 import { toast, ToastContainer } from 'react-toastify';
+import Newsletter from './components/Newsletter/Newsletter';
 
 function App() {
   const [coins, setCoins] = useState(0);
@@ -96,6 +97,7 @@ function App() {
     toast.warning('Player removed');
   }
 
+  // add more player button
   const handleAddMorePlayer = () => {
     setIsActive({
       status: 'available'
@@ -106,7 +108,7 @@ function App() {
     <>
       <ToastContainer />
 
-      <div className='max-w-[1320px] mx-auto w-11/12 mb-36 lg:w-full'>
+      <div className='max-w-[1340px] mx-auto w-11/12 lg:w-full'>
         <Header coins={coins}></Header>
 
         <Banner
@@ -133,6 +135,7 @@ function App() {
             ></SelectedPlayers>)
         }
 
+        <Newsletter></Newsletter>
       </div>
     </>
   )

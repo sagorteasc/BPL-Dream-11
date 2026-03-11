@@ -12,7 +12,7 @@ const Cricketers = ({ handleChoosePlayer }) => {
     }, [])
 
     return (
-        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 grid-cols-1 mb-20 md:mb-40 md:grid-cols-2 lg:grid-cols-3">
             {
                 cricketers.map(cricketer => <Cricketer
                     key={cricketer.playerId}
