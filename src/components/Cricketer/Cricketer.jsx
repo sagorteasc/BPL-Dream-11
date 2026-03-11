@@ -1,7 +1,7 @@
 import { CgProfile } from "react-icons/cg";
 import { CiFlag1 } from "react-icons/ci";
 import PropTypes from "prop-types";
-const Cricketer = ({ cricketer }) => {
+const Cricketer = ({ cricketer, handleChoosePlayer }) => {
     const { image, name, country, role, battingType, bowlingType, biddingPrice } = cricketer;
 
     return (
@@ -26,7 +26,7 @@ const Cricketer = ({ cricketer }) => {
                 </div>
                 <div className="flex justify-between items-center">
                     <h3 className="font-semibold">Price: ${biddingPrice}</h3>
-                    <button className="border border-[#13131310] text-sm px-4 py-2 rounded-lg">Choose Player</button>
+                    <button onClick={() => handleChoosePlayer(cricketer)} className="border border-[#13131310] text-sm px-4 py-2 rounded-lg">Choose Player</button>
                 </div>
             </div>
         </div>

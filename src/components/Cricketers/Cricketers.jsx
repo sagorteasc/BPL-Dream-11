@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Cricketer from "../Cricketer/Cricketer";
 import PropTypes from "prop-types";
 
-const Cricketers = () => {
+const Cricketers = ({ handleChoosePlayer }) => {
     const [cricketers, setCricketers] = useState([]);
 
     useEffect(() => {
@@ -17,7 +17,7 @@ const Cricketers = () => {
                 cricketers.map(cricketer => <Cricketer
                     key={cricketer.playerId}
                     cricketer={cricketer}
-
+                    handleChoosePlayer={handleChoosePlayer}
                 ></Cricketer>)
             }
         </div>
@@ -25,7 +25,7 @@ const Cricketers = () => {
 };
 
 Cricketers.propTypes = {
-
+    handleChoosePlayer: PropTypes.func.isRequired
 }
 
 export default Cricketers;
