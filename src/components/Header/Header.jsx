@@ -1,3 +1,4 @@
+import HeaderImg from '../../assets/logo.png'
 import PropTypes from "prop-types";
 import { TbCoinFilled } from "react-icons/tb";
 
@@ -5,7 +6,7 @@ const Header = ({ coins }) => {
     return (
         <nav className="py-5">
             <div className="flex gap-3 justify-between items-center">
-                <img className="w-24 h-24" src="/src/assets/logo.png" alt="" />
+                <img className="w-24 h-24" src={HeaderImg} alt="" />
                 <div className="flex items-center gap-2 md:gap-7 lg:gap-10">
                     <ul className="text-[#13131370] hidden md:flex items-center gap-2 md:gap-7 lg:gap-10">
                         <li>Home</li>
