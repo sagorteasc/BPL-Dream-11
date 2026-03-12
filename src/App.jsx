@@ -107,7 +107,7 @@ function App() {
 
   return (
     <>
-      <ToastContainer />
+      <ToastContainer position='top-center' toastClassName="w-80 md:w-92" />
 
       <div className='max-w-[1340px] mx-auto w-11/12 lg:w-full'>
         <Header coins={coins}></Header>

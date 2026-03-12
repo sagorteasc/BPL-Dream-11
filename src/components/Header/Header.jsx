@@ -1,4 +1,6 @@
+import PropTypes from "prop-types";
 import { TbCoinFilled } from "react-icons/tb";
+
 const Header = ({ coins }) => {
     return (
         <nav className="py-5">
@@ -17,5 +19,9 @@ const Header = ({ coins }) => {
         </nav>
     );
 };
+
+Header.propTypes = {
+    coins: PropTypes.number.isRequired
+}
 
 export default Header;
