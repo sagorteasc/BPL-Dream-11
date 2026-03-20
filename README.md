@@ -28,7 +28,7 @@ Build your dream team, manage your coins, and select the best players with a cle
 
 ## 🚀 Live Demo
 
-🌐 https://sagorteasc-bpl-dream-11.netlify.app/
+🌐 https://sagorteasc-bpl-dream-11.vercel.app/
 
 ---
 
